@@ -3,74 +3,88 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>АБИТУРИЕНТ 2025 | Профессиональный колледж КНУ</title>
+<title>АБИТУРИЕНТ 2026 | Профессиональный колледж КНУ</title>
 
 <script src="https://cdn.tailwindcss.com"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
-body{
-    font-family:'Inter',sans-serif;
-    overflow-x:hidden;
-}
+    body{
+        font-family:'Inter',sans-serif;
+        overflow-x:hidden;
+        overflow-x: hidden  
+    }
 
-html{
-    scroll-behavior:smooth;
-}
+    html{
+        scroll-behavior:smooth;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
 
-section{
-    min-height:100svh;
-}
+    section{
+        min-height:100svh;
+    }
 
-.hero-bg{
-    background:linear-gradient(rgba(255,255,255,0.92),rgba(255,255,255,0.95)),url('img.jpg');
-    background-size:cover;
-    background-position:center;
-}
+    .hero-bg{
+        background:linear-gradient(rgba(255,255,255,0.92),rgba(255,255,255,0.95)),url('img.jpg');
+        background-size:cover;
+        background-position:center;
+    }
 
-.photo-bg{
-    background-image:url('img.jpg');
-    background-size:cover;
-    background-position:center;
-}
+    .photo-bg{
+        background-image:url('img.jpg');
+        background-size:cover;
+        background-position:center;
+    }
 
-.nav-dot{
-    transition:all .3s ease;
-}
-.nav-dot:hover,
-.nav-dot.active{
-    background:#1e40af;
-    transform:scale(1.3);
-}
+    .nav-dot{
+        transition:all .3s ease;
+    }
+    .nav-dot:hover,
+    .nav-dot.active{
+        background:#1e40af;
+        transform:scale(1.3);
+    }
 
-.card,
-.aud-card{
-    transition:all .4s ease;
-}
-.card:hover,
-.aud-card:hover{
-    transform:translateY(-10px);
-    box-shadow:0 25px 50px -12px rgb(30 64 175 / 0.25);
-}
-.aud-card img{
-    transition:transform .5s ease;
-}
-.aud-card:hover img{
-    transform:scale(1.08);
-}
+    .card,
+    .aud-card{
+        transition:all .4s ease;
+    }
+    .card:hover,
+    .aud-card:hover{
+        transform:translateY(-10px);
+        box-shadow:0 25px 50px -12px rgb(30 64 175 / 0.25);
+    }
+    .aud-card img{
+        transition:transform .5s ease;
+    }
+    .aud-card:hover img{
+        transform:scale(1.08);
+    }
 
-/* ЛЁГКАЯ FADE-UP */
-.fade-up{
-    opacity:0;
-    transform:translateY(40px);
-    transition:opacity .8s ease, transform .8s ease;
-}
-.fade-up.show{
-    opacity:1;
-    transform:translateY(0);
-}
+    /* ЛЁГКАЯ FADE-UP */
+    .fade-up{
+        opacity:0;
+        transform:translateY(40px);
+        transition:opacity .8s ease, transform .8s ease;
+    }
+    .fade-up.show{
+        opacity:1;
+        transform:translateY(0);
+    }
+    /* Глобальный fade-up */
+    .fade-element {
+        opacity: 0;
+        transform: translateY(50px);
+        transition: opacity 0.9s ease, transform 0.9s ease;
+    }
+
+    .fade-element.show {
+        opacity: 1;
+        transform: translateY(0);
+    }
 </style>
 </head>
 
@@ -78,21 +92,21 @@ section{
 
 <!-- Навигация -->
 <div class="hidden md:flex fixed right-8 top-1/2 -translate-y-1/2 z-50 flex-col gap-6">
-<a href="#s1" class="nav-dot w-4 h-4 rounded-full bg-slate-300 block"></a>
-<a href="#s2" class="nav-dot w-4 h-4 rounded-full bg-slate-300 block"></a>
-<a href="#s3" class="nav-dot w-4 h-4 rounded-full bg-slate-300 block"></a>
-<a href="#s4" class="nav-dot w-4 h-4 rounded-full bg-slate-300 block"></a>
-<a href="#s5" class="nav-dot w-4 h-4 rounded-full bg-slate-300 block"></a>
-<a href="#s6" class="nav-dot w-4 h-4 rounded-full bg-slate-300 block"></a>
-<a href="#s7" class="nav-dot w-4 h-4 rounded-full bg-slate-300 block"></a>
-<a href="#s8" class="nav-dot w-4 h-4 rounded-full bg-slate-300 block"></a>
+    <a href="#s1" class="nav-dot w-4 h-4 rounded-full bg-slate-300 block"></a>
+    <a href="#s2" class="nav-dot w-4 h-4 rounded-full bg-slate-300 block"></a>
+    <a href="#s3" class="nav-dot w-4 h-4 rounded-full bg-slate-300 block"></a>
+    <a href="#s4" class="nav-dot w-4 h-4 rounded-full bg-slate-300 block"></a>
+    <a href="#s5" class="nav-dot w-4 h-4 rounded-full bg-slate-300 block"></a>
+    <a href="#s6" class="nav-dot w-4 h-4 rounded-full bg-slate-300 block"></a>
+    <a href="#s7" class="nav-dot w-4 h-4 rounded-full bg-slate-300 block"></a>
+    <a href="#s8" class="nav-dot w-4 h-4 rounded-full bg-slate-300 block"></a>
 </div>
 
 <!-- 1. ГЕРОЙ -->
 <section id="s1" class="hero-bg flex items-center fade-up">
     <div class="max-w-6xl mx-auto px-6 text-center">
         <img src="img.jpg" alt="Колледж" class="mx-auto w-40 sm:w-56 md:w-64 h-40 sm:h-56 md:h-64 object-cover rounded-3xl shadow-2xl mb-10">
-        <h1 class="text-4xl sm:text-5xl md:text-7xl font-bold tracking-tight">АБИТУРИЕНТ 2025</h1>
+        <h1 class="text-4xl sm:text-5xl md:text-7xl font-bold tracking-tight">АБИТУРИЕНТ 2026</h1>
         <p class="text-2xl sm:text-3xl md:text-5xl font-medium text-blue-700 mt-4">Профессиональный колледж КНУ</p>
     </div>
 </section>
@@ -108,7 +122,7 @@ section{
                 <p class="mt-6">Выбор профессии — один из самых важных шагов в жизни человека. Существует множество профессий. Как же не потеряться и пойти по тому пути, который приведет вас к успеху. Вот это счастье когда ты занят любимым делом, когда твой труд востребован и приносит пользу людям и твоей родине.</p>
                 <p class="mt-6">Профессиональный колледж Кыргызского национального университета им. Ж. Баласагына осуществляет подготовку по 14 специальностям IT-направлениям, экономического, педагогического, юридического, переводческого дела (англ. яз) и, следуя основной своей цели — подготовке и выпуску конкурентоспособных специалистов.</p>
             </div>
-            <p class="text-xl sm:text-2xl font-medium mt-12">Каныбек уулу Ардакбек<br><span class="text-blue-700">Директор профессионального колледжа</span></p>
+            <p class="text-xl sm:text-2xl font-medium mt-12">Бектен<br><span class="text-blue-700">Директор профессионального колледжа</span></p>
         </div>
     </div>
 </section>
@@ -181,122 +195,306 @@ section{
 
     <!-- 4. IT -->
     <section id="s4" class="bg-white py-20">
-        <div class="max-w-6xl mx-auto px-6">
-            <h2 class="text-5xl font-bold text-center mb-16">Информационные технологии</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="card bg-white border border-slate-100 rounded-3xl p-8">
-                    <p class="font-semibold text-xl">ПОВТ-1-25</p>
-                    <p class="text-sm text-slate-600 mt-3">Подготовка техников-программистов для разработки современного ПО</p>
-                </div>
-                <div class="card bg-white border border-slate-100 rounded-3xl p-8">
-                    <p class="font-semibold text-xl">ПОВТ-2-25</p>
-                    <p class="text-sm text-slate-600 mt-3">Алгоритмы, отладка и сопровождение программных продуктов</p>
-                </div>
-                <div class="card bg-white border border-slate-100 rounded-3xl p-8">
-                    <p class="font-semibold text-xl">АСОИ-1-25</p>
-                    <p class="text-sm text-slate-600 mt-3">Автоматизированные системы обработки информации и управления</p>
-                </div>
-                <div class="card bg-white border border-slate-100 rounded-3xl p-8">
-                    <p class="font-semibold text-xl">ИБАС-1-25</p>
-                    <p class="text-sm text-slate-600 mt-3">Защита информационных систем и критической инфраструктуры</p>
-                </div>
-                <div class="card bg-white border border-slate-100 rounded-3xl p-8">
-                    <p class="font-semibold text-xl">WEB-1-25</p>
-                    <p class="text-sm text-slate-600 mt-3">Разработка веб-приложений и сайтов</p>
-                </div>
-                <div class="card bg-white border border-slate-100 rounded-3xl p-8">
-                    <p class="font-semibold text-xl">CYB-1-25</p>
-                    <p class="text-sm text-slate-600 mt-3">Кибербезопасность и тестирование систем</p>
-                </div>
-            </div>
+    <div class="max-w-6xl mx-auto px-6">
+        <h4 class="text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-16">
+        Отдел информационных технологий
+        </h4>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+        <!-- 230109 -->
+        <div class="card bg-white border border-slate-100 rounded-3xl p-8">
+            <p class="font-semibold text-xl">
+            230109 Программное обеспечение вычислительной техники автоматизированных систем
+            </p>
+            <p class="text-sm text-slate-600 mt-3">
+            Квалификация: техник-программист.
+            Разработка алгоритмов, программная реализация, тестирование,
+            настройка и сопровождение программных продуктов.
+            </p>
         </div>
+
+        <!-- 230701 -->
+        <div class="card bg-white border border-slate-100 rounded-3xl p-8">
+            <p class="font-semibold text-xl">
+            230701 Прикладная информатика (по отраслям)
+            </p>
+            <p class="text-sm text-slate-600 mt-3">
+            Квалификация: техник-программист.
+            Решение прикладных задач с использованием современных
+            информационно-коммуникационных технологий,
+            разработка и автоматизация информационных систем.
+            </p>
+        </div>
+
+        <!-- 220206 -->
+        <div class="card bg-white border border-slate-100 rounded-3xl p-8">
+            <p class="font-semibold text-xl">
+            220206 Автоматизированные системы обработки информации и управления
+            </p>
+            <p class="text-sm text-slate-600 mt-3">
+            Квалификация: техник.
+            Разработка, создание и эксплуатация баз данных,
+            обеспечение достоверности и безопасности информационных систем.
+            </p>
+        </div>
+
+        <!-- 220502 -->
+        <div class="card bg-white border border-slate-100 rounded-3xl p-8">
+            <p class="font-semibold text-xl">
+            220502 Техническое регулирование и управление качеством
+            </p>
+            <p class="text-sm text-slate-600 mt-3">
+            Квалификация: техник.
+            Управление качеством, контроль процессов,
+            внедрение систем стандартизации и непрерывное улучшение качества.
+            </p>
+        </div>
+
+        <!-- ИБ -->
+        <div class="card bg-white border border-slate-100 rounded-3xl p-8">
+            <p class="font-semibold text-xl">
+            Информационная безопасность автоматизированных систем
+            </p>
+            <p class="text-sm text-slate-600 mt-3">
+            Защита информационных систем, анализ уязвимостей,
+            обеспечение безопасности критической инфраструктуры.
+            </p>
+        </div>
+
+        <!-- WEB -->
+        <div class="card bg-white border border-slate-100 rounded-3xl p-8">
+            <p class="font-semibold text-xl">
+            Веб-разработка и современные цифровые технологии
+            </p>
+            <p class="text-sm text-slate-600 mt-3">
+            Проектирование и разработка веб-приложений,
+            создание сайтов, интерфейсов и цифровых сервисов.
+            </p>
+        </div>
+
+        <!-- Кибербезопасность -->
+        <div class="card bg-white border border-slate-100 rounded-3xl p-8">
+            <p class="font-semibold text-xl">
+            Кибербезопасность и тестирование систем
+            </p>
+            <p class="text-sm text-slate-600 mt-3">
+            Анализ защищённости систем, тестирование,
+            выявление и предотвращение киберугроз.
+            </p>
+        </div>
+
+        </div>
+    </div>
     </section>
 
-    <!-- 5. ЭКОНОМИКА -->
+    <!-- 5. ЭКОНОМИКА И УПРАВЛЕНИЕ -->
     <section id="s5" class="bg-white py-20">
-        <div class="max-w-6xl mx-auto px-6">
-            <h2 class="text-5xl font-bold text-center mb-16">Экономика и управление</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="card bg-white border border-slate-100 rounded-3xl p-8">
-                    <p class="font-semibold text-xl">БУХ-1-25</p>
-                    <p class="text-sm text-slate-600 mt-3">Бухгалтерский учёт и аудит по отраслям</p>
-                </div>
-                <div class="card bg-white border border-slate-100 rounded-3xl p-8">
-                    <p class="font-semibold text-xl">ФИН-1-25</p>
-                    <p class="text-sm text-slate-600 mt-3">Финансы и банковское дело</p>
-                </div>
-                <div class="card bg-white border border-slate-100 rounded-3xl p-8">
-                    <p class="font-semibold text-xl">МЕН-1-25</p>
-                    <p class="text-sm text-slate-600 mt-3">Менеджмент и управление предприятиями</p>
-                </div>
-                <div class="card bg-white border border-slate-100 rounded-3xl p-8">
-                    <p class="font-semibold text-xl">НАЛ-1-25</p>
-                    <p class="text-sm text-slate-600 mt-3">Налоги и налогообложение</p>
-                </div>
-                <div class="card bg-white border border-slate-100 rounded-3xl p-8">
-                    <p class="font-semibold text-xl">ЭКО-1-25</p>
-                    <p class="text-sm text-slate-600 mt-3">Экономический анализ и прогнозирование</p>
-                </div>
-                <div class="card bg-white border border-slate-100 rounded-3xl p-8">
-                    <p class="font-semibold text-xl">КОМ-1-25</p>
-                    <p class="text-sm text-slate-600 mt-3">Коммерция и маркетинг</p>
-                </div>
-            </div>
+    <div class="max-w-6xl mx-auto px-6">
+        <h4 class="text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-16">
+        Отдел экономики и управления
+        </h4>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+        <!-- 080108 -->
+        <div class="card bg-white border border-slate-100 rounded-3xl p-8">
+            <p class="font-semibold text-xl">
+            080108 Банковское дело
+            </p>
+            <p class="text-sm text-slate-600 mt-3">
+            Квалификация: специалист банковского дела.
+            Клиентское обслуживание, бухгалтерский учет,
+            анализ операций и работа в коммерческих банках.
+            </p>
         </div>
+
+        <!-- 080110 -->
+        <div class="card bg-white border border-slate-100 rounded-3xl p-8">
+            <p class="font-semibold text-xl">
+            080110 Экономика и бухгалтерский учёт (по отраслям)
+            </p>
+            <p class="text-sm text-slate-600 mt-3">
+            Квалификация: бухгалтер.
+            Ведение бухгалтерского учета, анализ,
+            аудит и финансовый контроль на предприятиях различных отраслей.
+            </p>
+        </div>
+
+        <!-- 080106 -->
+        <div class="card bg-white border border-slate-100 rounded-3xl p-8">
+            <p class="font-semibold text-xl">
+            080106 Финансы (по отраслям)
+            </p>
+            <p class="text-sm text-slate-600 mt-3">
+            Квалификация: финансист.
+            Финансовое планирование, анализ,
+            управление денежными потоками и бюджетирование.
+            </p>
+        </div>
+
+        <!-- 080501 -->
+        <div class="card bg-white border border-slate-100 rounded-3xl p-8">
+            <p class="font-semibold text-xl">
+            080501 Менеджмент (по отраслям)
+            </p>
+            <p class="text-sm text-slate-600 mt-3">
+            Квалификация: менеджер.
+            Организация и управление деятельностью предприятий,
+            решение финансово-экономических задач.
+            </p>
+        </div>
+
+        <!-- 100201 -->
+        <div class="card bg-white border border-slate-100 rounded-3xl p-8">
+            <p class="font-semibold text-xl">
+            100201 Туризм
+            </p>
+            <p class="text-sm text-slate-600 mt-3">
+            Квалификация: специалист по туризму.
+            Организация туристических услуг, ведение переговоров,
+            работа с клиентами и партнёрами в сфере туризма.
+            </p>
+        </div>
+
+        </div>
+    </div>
     </section>
 
-    <!-- 6. ГУМАНИТАРНЫЕ -->
+    <!-- 6. ГУМАНИТАРНЫЕ И СОЦИАЛЬНЫЕ -->
     <section id="s6" class="bg-white py-20">
-        <div class="max-w-6xl mx-auto px-6">
-            <h2 class="text-5xl font-bold text-center mb-16">Гуманитарные и юридические направления</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="card bg-white border border-slate-100 rounded-3xl p-8">
-                    <p class="font-semibold text-xl">ПРАВ-1-25</p>
-                    <p class="text-sm text-slate-600 mt-3">Правоведение и юридическое сопровождение</p>
-                </div>
-                <div class="card bg-white border border-slate-100 rounded-3xl p-8">
-                    <p class="font-semibold text-xl">ПЕР-1-25</p>
-                    <p class="text-sm text-slate-600 mt-3">Переводческое дело (английский язык)</p>
-                </div>
-                <div class="card bg-white border border-slate-100 rounded-3xl p-8">
-                    <p class="font-semibold text-xl">ПЕД-1-25</p>
-                    <p class="text-sm text-slate-600 mt-3">Дошкольное и начальное образование</p>
-                </div>
-                <div class="card bg-white border border-slate-100 rounded-3xl p-8">
-                    <p class="font-semibold text-xl">СОЦ-1-25</p>
-                    <p class="text-sm text-slate-600 mt-3">Социальная педагогика и работа</p>
-                </div>
-                <div class="card bg-white border border-slate-100 rounded-3xl p-8">
-                    <p class="font-semibold text-xl">ЮР-1-25</p>
-                    <p class="text-sm text-slate-600 mt-3">Юридический консалтинг</p>
-                </div>
-                <div class="card bg-white border border-slate-100 rounded-3xl p-8">
-                    <p class="font-semibold text-xl">ЛИНГ-1-25</p>
-                    <p class="text-sm text-slate-600 mt-3">Лингвистика и перевод</p>
-                </div>
-            </div>
+    <div class="max-w-6xl mx-auto px-6">
+        <h4 class="text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-16">
+        Гуманитарные и социальные направления
+        </h4>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+        <!-- 030503 -->
+        <div class="card bg-white border border-slate-100 rounded-3xl p-8">
+            <p class="font-semibold text-xl">
+            030503 Правоведение
+            </p>
+            <p class="text-sm text-slate-600 mt-3">
+            Квалификация: юрист.
+            Реализация правовых норм, обеспечение законности и правопорядка,
+            правовое консультирование и сопровождение.
+            </p>
         </div>
+
+        <!-- 040101 -->
+        <div class="card bg-white border border-slate-100 rounded-3xl p-8">
+            <p class="font-semibold text-xl">
+            040101 Социальная работа
+            </p>
+            <p class="text-sm text-slate-600 mt-3">
+            Квалификация: социальный работник.
+            Социальная защита и обслуживание населения,
+            работа с трудными жизненными ситуациями,
+            ведение кейс-менеджмента и профилактическая деятельность.
+            </p>
+        </div>
+
+        <!-- 050711 -->
+        <div class="card bg-white border border-slate-100 rounded-3xl p-8">
+            <p class="font-semibold text-xl">
+            050711 Социальная педагогика
+            </p>
+            <p class="text-sm text-slate-600 mt-3">
+            Квалификация: социальный педагог.
+            Работа с детьми и подростками в образовательных учреждениях,
+            организация воспитательной и профилактической деятельности.
+            </p>
+        </div>
+
+        <!-- 050720 -->
+        <div class="card bg-white border border-slate-100 rounded-3xl p-8">
+            <p class="font-semibold text-xl">
+            050720 Переводческое дело
+            </p>
+            <p class="text-sm text-slate-600 mt-3">
+            Квалификация: переводчик.
+            Межъязыковая и межкультурная коммуникация,
+            письменный и устный перевод,
+            сопровождение международных проектов.
+            </p>
+        </div>
+
+        <!-- 030505 -->
+        <div class="card bg-white border border-slate-100 rounded-3xl p-8">
+            <p class="font-semibold text-xl">
+            030505 Иностранный язык
+            </p>
+            <p class="text-sm text-slate-600 mt-3">
+            Квалификация: учитель иностранного языка (в начальных классах).
+            Преподавание иностранного языка,
+            развитие коммуникативных и педагогических навыков.
+            </p>
+        </div>
+
+        </div>
+    </div>
     </section>
 
     <!-- 8. КАРТА -->
-    <section id="s8" class="bg-white py-20 flex items-center">
-        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
-            <div>
-                <h2 class="text-5xl font-bold mb-10">Мы ждём тебя!</h2>
-                <div class="space-y-8 text-xl">
-                    <div>Главный адрес: ул. Калыка Акиева, 85</div>
-                    <div>Запись документов: ул. Абдымомунова 328</div>
-                    <div>Телефон: 0709 09 7779</div>
-                </div>
-                <a href="https://2gis.kg/bishkek/firm/70000001020955105" target="_blank" class="mt-12 inline-block bg-blue-700 text-white px-12 py-5 rounded-2xl text-xl font-medium hover:bg-blue-800">Открыть в 2ГИС →</a>
-            </div>
-            <div class="rounded-3xl overflow-hidden shadow-2xl h-96 md:h-full">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2923.8!2d74.5995!3d42.87!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDLCsDUyJzEyLjAiTiA3NMKwMzYnMDAuMCJF!5e0!3m2!1sru!2skg" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-            </div>
+    <section id="s8" class="bg-white py-16 flex items-center">
+    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+
+        <!-- Текст -->
+        <div>
+        <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-8">
+            Мы ждём тебя!
+        </h2>
+
+        <div class="space-y-6 text-base sm:text-lg">
+            <div><span class="font-semibold">Главный адрес:</span> ул. Калыка Акиева, 85</div>
+            <div><span class="font-semibold">Запись документов:</span> ул. Абдымомунова 328</div>
+            <div><span class="font-semibold">Телефон:</span> 0709 09 7779</div>
         </div>
+
+        <a href="https://2gis.kg/bishkek/firm/70000001020955105"
+            target="_blank"
+            class="mt-8 inline-block bg-blue-700 text-white px-6 py-4 sm:px-10 sm:py-5 rounded-2xl text-lg font-medium hover:bg-blue-800 transition">
+            Открыть в 2ГИС →
+        </a>
+        </div>
+
+        <!-- Карта -->
+        <div class="rounded-3xl overflow-hidden shadow-2xl aspect-video md:aspect-auto md:h-[420px]">
+        <iframe
+            src="https://www.google.com/maps?q=Бишкек,+ул.+Калыка+Акиева+85&output=embed"
+            class="w-full h-full"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+        </div>
+
+    </div>
     </section>
 
 <!-- JS -->
+ <script>
+    document.addEventListener("DOMContentLoaded", () => {
+
+        // Выбираем все основные блоки
+        const elements = document.querySelectorAll("section, .card, .aud-card");
+
+        elements.forEach(el => el.classList.add("fade-element"));
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("show");
+                }
+            });
+        }, {
+            threshold: 0.15
+        });
+
+        elements.forEach(el => observer.observe(el));
+
+    });
+</script>
 <script>
 const fadeElements=document.querySelectorAll('.fade-up');
 const observer=new IntersectionObserver(entries=>{
