@@ -1,88 +1,118 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>АБИТУРИЕНТ 2025 | Профессиональный колледж КНУ</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
-        body { font-family: 'Inter', sans-serif; }
-        
-        html {scroll-behavior: smooth;}
-        section {min-height: 100svh; }
-        
-        .hero-bg {
-            background: linear-gradient(rgba(255,255,255,0.92), rgba(255,255,255,0.95)), url('img.jpg');
-            background-size: cover;
-            background-position: center;
-        }
-        .photo-bg { background-image: url('img.jpg'); background-size: cover; background-position: center; }
-        
-        .nav-dot { transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); }
-        .nav-dot:hover, .nav-dot.active { background-color: #1e40af; transform: scale(1.35); }
-        
-        .card, .aud-card { transition: all 0.4s ease; }
-        .card:hover, .aud-card:hover { transform: translateY(-10px); box-shadow: 0 25px 50px -12px rgb(30 64 175 / 0.25); }
-        
-        .aud-card img { transition: all 0.5s ease; }
-        .aud-card:hover img { transform: scale(1.08); }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>АБИТУРИЕНТ 2025 | Профессиональный колледж КНУ</title>
 
-        .fade-up {
-        opacity: 0;
-        transform: translateY(60px);
-        transition: 
-            opacity 0.9s cubic-bezier(0.22, 1, 0.36, 1),
-            transform 0.9s cubic-bezier(0.22, 1, 0.36, 1);
-    }
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
-    .fade-up.show {
-        opacity: 1;
-        transform: translateY(0);
-    }
-    </style>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+body{
+    font-family:'Inter',sans-serif;
+    overflow-x:hidden;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+section{
+    min-height:100svh;
+}
+
+.hero-bg{
+    background:linear-gradient(rgba(255,255,255,0.92),rgba(255,255,255,0.95)),url('img.jpg');
+    background-size:cover;
+    background-position:center;
+}
+
+.photo-bg{
+    background-image:url('img.jpg');
+    background-size:cover;
+    background-position:center;
+}
+
+.nav-dot{
+    transition:all .3s ease;
+}
+.nav-dot:hover,
+.nav-dot.active{
+    background:#1e40af;
+    transform:scale(1.3);
+}
+
+.card,
+.aud-card{
+    transition:all .4s ease;
+}
+.card:hover,
+.aud-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 25px 50px -12px rgb(30 64 175 / 0.25);
+}
+.aud-card img{
+    transition:transform .5s ease;
+}
+.aud-card:hover img{
+    transform:scale(1.08);
+}
+
+/* ЛЁГКАЯ FADE-UP */
+.fade-up{
+    opacity:0;
+    transform:translateY(40px);
+    transition:opacity .8s ease, transform .8s ease;
+}
+.fade-up.show{
+    opacity:1;
+    transform:translateY(0);
+}
+</style>
 </head>
+
 <body class="bg-white text-slate-900">
 
-    <!-- Навигация -->
-    <div class="fixed right-8 top-1/2 -translate-y-1/2 z-50 flex flex-col gap-6">
-        <a href="#s1" class="nav-dot w-4 h-4 rounded-full bg-slate-300 block"></a>
-        <a href="#s2" class="nav-dot w-4 h-4 rounded-full bg-slate-300 block"></a>
-        <a href="#s3" class="nav-dot w-4 h-4 rounded-full bg-slate-300 block"></a>
-        <a href="#s4" class="nav-dot w-4 h-4 rounded-full bg-slate-300 block"></a>
-        <a href="#s5" class="nav-dot w-4 h-4 rounded-full bg-slate-300 block"></a>
-        <a href="#s6" class="nav-dot w-4 h-4 rounded-full bg-slate-300 block"></a>
-        <a href="#s7" class="nav-dot w-4 h-4 rounded-full bg-slate-300 block"></a>
-        <a href="#s8" class="nav-dot w-4 h-4 rounded-full bg-slate-300 block"></a>
+<!-- Навигация -->
+<div class="hidden md:flex fixed right-8 top-1/2 -translate-y-1/2 z-50 flex-col gap-6">
+<a href="#s1" class="nav-dot w-4 h-4 rounded-full bg-slate-300 block"></a>
+<a href="#s2" class="nav-dot w-4 h-4 rounded-full bg-slate-300 block"></a>
+<a href="#s3" class="nav-dot w-4 h-4 rounded-full bg-slate-300 block"></a>
+<a href="#s4" class="nav-dot w-4 h-4 rounded-full bg-slate-300 block"></a>
+<a href="#s5" class="nav-dot w-4 h-4 rounded-full bg-slate-300 block"></a>
+<a href="#s6" class="nav-dot w-4 h-4 rounded-full bg-slate-300 block"></a>
+<a href="#s7" class="nav-dot w-4 h-4 rounded-full bg-slate-300 block"></a>
+<a href="#s8" class="nav-dot w-4 h-4 rounded-full bg-slate-300 block"></a>
+</div>
+
+<!-- 1. ГЕРОЙ -->
+<section id="s1" class="hero-bg flex items-center fade-up">
+    <div class="max-w-6xl mx-auto px-6 text-center">
+        <img src="img.jpg" alt="Колледж" class="mx-auto w-40 sm:w-56 md:w-64 h-40 sm:h-56 md:h-64 object-cover rounded-3xl shadow-2xl mb-10">
+        <h1 class="text-4xl sm:text-5xl md:text-7xl font-bold tracking-tight">АБИТУРИЕНТ 2025</h1>
+        <p class="text-2xl sm:text-3xl md:text-5xl font-medium text-blue-700 mt-4">Профессиональный колледж КНУ</p>
     </div>
+</section>
 
-    <!-- 1. ГЕРОЙ -->
-    <section id="s1" class="hero-bg flex items-center">
-        <div class="max-w-6xl mx-auto px-6 text-center">
-            <img src="img.jpg" alt="Колледж" class="mx-auto w-64 h-64 object-cover rounded-3xl shadow-2xl mb-10">
-            <h1 class="text-6xl md:text-7xl font-bold tracking-tighter">АБИТУРИЕНТ 2025</h1>
-            <p class="text-4xl md:text-5xl font-medium text-blue-700 mt-4">Профессиональный колледж КНУ</p>
-        </div>
-    </section>
-
-    <!-- 2. ДИРЕКТОР (полный текст) -->
-    <section id="s2" class="fade-up snow bg-white py-20 flex items-center">
-        <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
-            <div class="photo-bg h-[520px] rounded-3xl shadow-2xl"></div>
+<!-- 2. ДИРЕКТОР -->
+<section id="s2" class="bg-white py-20 flex items-center fade-up">
+    <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
+        <div class="photo-bg h-64 sm:h-96 md:h-[520px] rounded-3xl shadow-2xl"></div>
             <div class="space-y-8">
-                <h2 class="text-5xl font-bold">Слово директора</h2>
-                <div class="text-lg leading-relaxed">
-                    <p>Дорогой выпускник, абитуриент!</p>
-                    <p class="mt-6">Выбор профессии — один из самых важных шагов в жизни человека. Существует множество профессий. Как же не потеряться и пойти по тому пути, который приведет вас к успеху. Вот это счастье когда ты занят любимым делом, когда твой труд востребован и приносит пользу людям и твоей родине.</p>
-                    <p class="mt-6">Профессиональный колледж Кыргызского национального университета им. Ж. Баласагына осуществляет подготовку по 14 специальностям IT-направлениям, экономического, педагогического, юридического, переводческого дела (англ. яз) и, следуя основной своей цели — подготовке и выпуску конкурентоспособных специалистов.</p>
-                </div>
-                <p class="text-2xl font-medium mt-12">Каныбек уулу Ардакбек<br><span class="text-blue-700">Директор профессионального колледжа</span></p>
+                <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold">Слово директора</h2>
+                <div class="text-base sm:text-lg leading-relaxed">
+                <p>Дорогой выпускник, абитуриент!</p>
+                <p class="mt-6">Выбор профессии — один из самых важных шагов в жизни человека. Существует множество профессий. Как же не потеряться и пойти по тому пути, который приведет вас к успеху. Вот это счастье когда ты занят любимым делом, когда твой труд востребован и приносит пользу людям и твоей родине.</p>
+                <p class="mt-6">Профессиональный колледж Кыргызского национального университета им. Ж. Баласагына осуществляет подготовку по 14 специальностям IT-направлениям, экономического, педагогического, юридического, переводческого дела (англ. яз) и, следуя основной своей цели — подготовке и выпуску конкурентоспособных специалистов.</p>
             </div>
+            <p class="text-xl sm:text-2xl font-medium mt-12">Каныбек уулу Ардакбек<br><span class="text-blue-700">Директор профессионального колледжа</span></p>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- 3. НАШИ АУДИТОРИИ (НОВЫЙ СЛАЙД с 6 фото) -->
     <section id="s3" class="bg-white py-20">
         <div class="max-w-7xl mx-auto px-6">
             <h2 class="text-5xl font-bold text-center mb-16">Наши современные аудитории</h2>
@@ -90,8 +120,8 @@
                 <div class="aud-card bg-white border border-slate-100 rounded-3xl overflow-hidden">
                     <img src="img.jpg" alt="Аудитория 1" class="w-full h-56 object-cover">
                     <div class="p-6">
-                        <p class="font-semibold">Компьютерный класс №1</p>
-                        <p class="text-sm text-slate-600 mt-1">30 современных компьютеров, проектор, высокоскоростной интернет</p>
+                        <p class="font-semibold">Компьютерный класс №1</p>
+                        <p class="text-sm text-slate-600 mt-1">30 современных компьютеров, проектор, высокоскоростной интернет</p>
                     </div>
                 </div>
                 <div class="aud-card bg-white border border-slate-100 rounded-3xl overflow-hidden">
@@ -104,7 +134,7 @@
                 <div class="aud-card bg-white border border-slate-100 rounded-3xl overflow-hidden">
                     <img src="img.jpg" alt="Аудитория 3" class="w-full h-56 object-cover">
                     <div class="p-6">
-                        <p class="font-semibold">Класс сетевых технологий</p>
+                        <p class="font-semibold">Класс сетевых технологий</p>
                         <p class="text-sm text-slate-600 mt-1">Cisco оборудование, серверы, Wi-Fi 6</p>
                     </div>
                 </div>
@@ -112,7 +142,7 @@
                     <img src="img.jpg" alt="Аудитория 4" class="w-full h-56 object-cover">
                     <div class="p-6">
                         <p class="font-semibold">Лаборатория кибербезопасности</p>
-                        <p class="text-sm text-slate-600 mt-1">Специализированные стенды для практических занятий</p>
+                        <p class="text-sm text-slate-600 mt-1">Специализированные стенды для практических занятий</p>
                     </div>
                 </div>
                 <div class="aud-card bg-white border border-slate-100 rounded-3xl overflow-hidden">
@@ -144,7 +174,7 @@
                 <div class="flex gap-6"><span class="text-blue-600 font-bold text-3xl w-10">4.</span> Паспорт или свидетельство о рождении (оригинал и копия)</div>
             </div>
             <div class="mt-20 text-center text-2xl text-blue-700 font-medium">
-                Запись: ул. Абдымомунова 328, Лабораторный корпус КНУ<br>Тел: 0709 09 7779
+                Запись: ул. Абдымомунова 328, Лабораторный корпус КНУ<br>Тел: 0709 09 7779
             </div>
         </div>
     </section>
@@ -168,11 +198,11 @@
                 </div>
                 <div class="card bg-white border border-slate-100 rounded-3xl p-8">
                     <p class="font-semibold text-xl">ИБАС-1-25</p>
-                    <p class="text-sm text-slate-600 mt-3">Защита информационных систем и критической инфраструктуры</p>
+                    <p class="text-sm text-slate-600 mt-3">Защита информационных систем и критической инфраструктуры</p>
                 </div>
                 <div class="card bg-white border border-slate-100 rounded-3xl p-8">
                     <p class="font-semibold text-xl">WEB-1-25</p>
-                    <p class="text-sm text-slate-600 mt-3">Разработка веб-приложений и сайтов</p>
+                    <p class="text-sm text-slate-600 mt-3">Разработка веб-приложений и сайтов</p>
                 </div>
                 <div class="card bg-white border border-slate-100 rounded-3xl p-8">
                     <p class="font-semibold text-xl">CYB-1-25</p>
@@ -189,7 +219,7 @@
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <div class="card bg-white border border-slate-100 rounded-3xl p-8">
                     <p class="font-semibold text-xl">БУХ-1-25</p>
-                    <p class="text-sm text-slate-600 mt-3">Бухгалтерский учёт и аудит по отраслям</p>
+                    <p class="text-sm text-slate-600 mt-3">Бухгалтерский учёт и аудит по отраслям</p>
                 </div>
                 <div class="card bg-white border border-slate-100 rounded-3xl p-8">
                     <p class="font-semibold text-xl">ФИН-1-25</p>
@@ -205,7 +235,7 @@
                 </div>
                 <div class="card bg-white border border-slate-100 rounded-3xl p-8">
                     <p class="font-semibold text-xl">ЭКО-1-25</p>
-                    <p class="text-sm text-slate-600 mt-3">Экономический анализ и прогнозирование</p>
+                    <p class="text-sm text-slate-600 mt-3">Экономический анализ и прогнозирование</p>
                 </div>
                 <div class="card bg-white border border-slate-100 rounded-3xl p-8">
                     <p class="font-semibold text-xl">КОМ-1-25</p>
@@ -226,7 +256,7 @@
                 </div>
                 <div class="card bg-white border border-slate-100 rounded-3xl p-8">
                     <p class="font-semibold text-xl">ПЕР-1-25</p>
-                    <p class="text-sm text-slate-600 mt-3">Переводческое дело (английский язык)</p>
+                    <p class="text-sm text-slate-600 mt-3">Переводческое дело (английский язык)</p>
                 </div>
                 <div class="card bg-white border border-slate-100 rounded-3xl p-8">
                     <p class="font-semibold text-xl">ПЕД-1-25</p>
@@ -238,7 +268,7 @@
                 </div>
                 <div class="card bg-white border border-slate-100 rounded-3xl p-8">
                     <p class="font-semibold text-xl">ЮР-1-25</p>
-                    <p class="text-sm text-slate-600 mt-3">Юридический консалтинг</p>
+                    <p class="text-sm text-slate-600 mt-3">Юридический консалтинг</p>
                 </div>
                 <div class="card bg-white border border-slate-100 rounded-3xl p-8">
                     <p class="font-semibold text-xl">ЛИНГ-1-25</p>
@@ -252,9 +282,9 @@
     <section id="s8" class="bg-white py-20 flex items-center">
         <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
             <div>
-                <h2 class="text-5xl font-bold mb-10">Мы ждём тебя!</h2>
+                <h2 class="text-5xl font-bold mb-10">Мы ждём тебя!</h2>
                 <div class="space-y-8 text-xl">
-                    <div>Главный адрес: ул. Калыка Акиева, 85</div>
+                    <div>Главный адрес: ул. Калыка Акиева, 85</div>
                     <div>Запись документов: ул. Абдымомунова 328</div>
                     <div>Телефон: 0709 09 7779</div>
                 </div>
@@ -266,30 +296,28 @@
         </div>
     </section>
 
-    <script>
-        // Активные точки (работают идеально)
-        window.addEventListener('scroll', () => {
-            const dots = document.querySelectorAll('.nav-dot');
-            const sections = document.querySelectorAll('section');
-            let current = 0;
-            sections.forEach((sec, i) => {
-                if (sec.getBoundingClientRect().top <= window.innerHeight * 0.4) current = i;
-            });
-            dots.forEach((dot, i) => dot.classList.toggle('active', i === current));
-        });
-    </script>
-    <script>
-        const fadeElements = document.querySelectorAll('.fade-up');
+<!-- JS -->
+<script>
+const fadeElements=document.querySelectorAll('.fade-up');
+const observer=new IntersectionObserver(entries=>{
+entries.forEach(entry=>{
+if(entry.isIntersecting){
+entry.target.classList.add('show');
+}
+});
+},{threshold:0.15});
+fadeElements.forEach(el=>observer.observe(el));
 
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('show');
-                }
-            });
-        }, { threshold: 0.15 });
+window.addEventListener('scroll',()=>{
+const dots=document.querySelectorAll('.nav-dot');
+const sections=document.querySelectorAll('section');
+let current=0;
+sections.forEach((sec,i)=>{
+if(sec.getBoundingClientRect().top<=window.innerHeight*0.4) current=i;
+});
+dots.forEach((dot,i)=>dot.classList.toggle('active',i===current));
+});
+</script>
 
-        fadeElements.forEach(el => observer.observe(el));
-    </script>
 </body>
 </html>
