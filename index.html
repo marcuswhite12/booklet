@@ -10,6 +10,9 @@
 
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+    section{
+        min-height: auto; /* убираем принудительную высоту, чтобы не было лишних пустот */
+    }
 
     body{
         font-family:'Inter',sans-serif;
@@ -28,13 +31,13 @@
     }
 
     .hero-bg{
-        background:linear-gradient(rgba(255,255,255,0.92),rgba(255,255,255,0.95)),url('img.jpg');
+        background:linear-gradient(rgba(255,255,255,0.92),rgba(255,255,255,0.95)),url('images/main.png');
         background-size:cover;
         background-position:center;
     }
 
     .photo-bg{
-        background-image:url('img.jpg');
+        background-image:url('images/director.png');
         background-size:cover;
         background-position:center;
     }
@@ -84,7 +87,7 @@
 <!-- 1. ГЕРОЙ -->
 <section id="s1" class="hero-bg flex items-center">
     <div class="max-w-6xl mx-auto px-6 text-center">
-        <img src="img.jpg" alt="Колледж" class="mx-auto w-40 sm:w-56 md:w-64 h-40 sm:h-56 md:h-64 object-cover rounded-3xl shadow-2xl mb-10">
+        <img src="images/IMG_3789.JPG" alt="Колледж" class="mx-auto w-40 sm:w-56 md:w-64 h-40 sm:h-56 md:h-64 object-cover rounded-3xl shadow-2xl mb-10">
         <h1 class="text-4xl sm:text-5xl md:text-7xl font-bold tracking-tight">АБИТУРИЕНТ 2026</h1>
         <p class="text-2xl sm:text-3xl md:text-5xl font-medium text-blue-700 mt-4">Профессиональный колледж КНУ</p>
     </div>
@@ -94,326 +97,207 @@
 <section id="s2" class="bg-white py-20 flex items-center">
     <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
         <div class="photo-bg h-64 sm:h-96 md:h-[520px] rounded-3xl shadow-2xl"></div>
-            <div class="space-y-8">
-                <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold">Слово директора</h2>
-                <div class="text-base sm:text-lg leading-relaxed">
-                <p>Дорогой выпускник, абитуриент!</p>
-                <p class="mt-6">Выбор профессии — один из самых важных шагов в жизни человека. Существует множество профессий. Как же не потеряться и пойти по тому пути, который приведет вас к успеху. Вот это счастье когда ты занят любимым делом, когда твой труд востребован и приносит пользу людям и твоей родине.</p>
-                <p class="mt-6">Профессиональный колледж Кыргызского национального университета им. Ж. Баласагына осуществляет подготовку по 14 специальностям IT-направлениям, экономического, педагогического, юридического, переводческого дела (англ. яз) и, следуя основной своей цели — подготовке и выпуску конкурентоспособных специалистов.</p>
+        <div class="space-y-8">
+            <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold">Слово директора</h2>
+            <div class="text-base sm:text-lg leading-relaxed">
+                <p>Дорогой выпускник, абитуриент!</p>
+                <p class="mt-6">Ты стоишь на пороге одного из самых важных решений в своей жизни — выбора профессии. Это не просто шаг, это начало твоего пути, твоей истории, твоего будущего. Представь: просыпаться каждое утро с желанием действовать, развиваться, создавать и быть полезным. Ведь настоящее счастье — это не только успех, но и любовь к своему делу, уверенность в завтрашнем дне и ощущение, что ты на своём месте.</p>
+                <p class="mt-6">Профессиональный колледж Кыргызского национального университета имени Жусупа Баласагына — это пространство возможностей, где знания превращаются в навыки, а мечты — в реальность. Здесь ты можешь выбрать из 15 современных и востребованных специальностей: от IT и экономики до переводческого дела (английский и китайский языки), психологии, туризма и социальной работы. Мы не просто обучаем — мы помогаем раскрыть твой потенциал, сформировать.</p>
             </div>
-            <p class="text-xl sm:text-2xl font-medium mt-12">Бектен<br><span class="text-blue-700">Директор профессионального колледжа</span></p>
+            <p class="text-xl sm:text-2xl font-medium mt-12">Саадабек уулу Бектен<br><span class="text-blue-700">Директор профессионального колледжа</span></p>
         </div>
     </div>
 </section>
 
-    <section id="s3" class="bg-white py-20">
-        <div class="max-w-7xl mx-auto px-6">
-            <h2 class="text-5xl font-bold text-center mb-16">Наши современные аудитории</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="aud-card bg-white border border-slate-100 rounded-3xl overflow-hidden">
-                    <img src="img.jpg" alt="Аудитория 1" class="w-full h-56 object-cover">
-                    <div class="p-6">
-                        <p class="font-semibold">Компьютерный класс №1</p>
-                        <p class="text-sm text-slate-600 mt-1">30 современных компьютеров, проектор, высокоскоростной интернет</p>
-                    </div>
+<!-- 3. АУДИТОРИИ (оставлено без изменений) -->
+<section id="s3" class="bg-white py-16 md:py-20">
+    <div class="max-w-7xl mx-auto px-6">
+        <h2 class="text-5xl font-bold text-center mb-16">Наши современные аудитории</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="aud-card bg-white border border-slate-100 rounded-3xl overflow-hidden">
+                <img src="images/IMG_3808.JPG" alt="Аудитория 1" class="w-full h-56 object-cover">
+                <div class="p-6">
+                    <p class="font-semibold">Компьютерный класс №1</p>
+                    <p class="text-sm text-slate-600 mt-1">20 современных компьютеров с предустановленным профессиональным ПО, высокоскоростной интернет — для занятий по программированию, информационным системам и веб-разработке.</p>
                 </div>
-                <div class="aud-card bg-white border border-slate-100 rounded-3xl overflow-hidden">
-                    <img src="img.jpg" alt="Аудитория 2" class="w-full h-56 object-cover">
-                    <div class="p-6">
-                        <p class="font-semibold">Лаборатория программирования</p>
-                        <p class="text-sm text-slate-600 mt-1">Оборудование для разработки и тестирования ПО</p>
-                    </div>
+            </div>
+            <div class="aud-card bg-white border border-slate-100 rounded-3xl overflow-hidden">
+                <img src="images/IMG_3812.JPG" alt="Аудитория 2" class="w-full h-56 object-cover">
+                <div class="p-6">
+                    <p class="font-semibold">Лингафонный кабинет (переводческое дело)</p>
+                    <p class="text-sm text-slate-600 mt-1">Профессиональные наушники с микрофоном, аудио- и видеоматериалы для тренировки устного перевода</p>
                 </div>
-                <div class="aud-card bg-white border border-slate-100 rounded-3xl overflow-hidden">
-                    <img src="img.jpg" alt="Аудитория 3" class="w-full h-56 object-cover">
+            </div>
+            <div class="aud-card bg-white border border-slate-100 rounded-3xl overflow-hidden">
+                <img src="images/IMG_3837.JPG" alt="Аудитория 3" class="w-full h-56 object-cover">
                     <div class="p-6">
-                        <p class="font-semibold">Класс сетевых технологий</p>
-                        <p class="text-sm text-slate-600 mt-1">Cisco оборудование, серверы, Wi-Fi 6</p>
+                        <p class="font-semibold">Аудитория истории и культурного наследия</p>
+                        <p class="text-sm text-slate-600 mt-1">Коллекция исторических карт, мультимедиа для погружения в эпохи</p>
                     </div>
-                </div>
-                <div class="aud-card bg-white border border-slate-100 rounded-3xl overflow-hidden">
-                    <img src="img.jpg" alt="Аудитория 4" class="w-full h-56 object-cover">
+            </div>
+            <div class="aud-card bg-white border border-slate-100 rounded-3xl overflow-hidden">
+                <img src="images/IMG_3816.JPG" alt="Аудитория 4" class="w-full h-56 object-cover">
                     <div class="p-6">
-                        <p class="font-semibold">Лаборатория кибербезопасности</p>
-                        <p class="text-sm text-slate-600 mt-1">Специализированные стенды для практических занятий</p>
+                        <p class="font-semibold">Аудитория для конференций</p>
+                        <p class="text-sm text-slate-600 mt-1">Модульная мебель для семинаров, дебатов и групповой работы, акустическая система</p>
                     </div>
-                </div>
-                <div class="aud-card bg-white border border-slate-100 rounded-3xl overflow-hidden">
-                    <img src="img.jpg" alt="Аудитория 5" class="w-full h-56 object-cover">
+            </div>
+            <div class="aud-card bg-white border border-slate-100 rounded-3xl overflow-hidden">
+                <img src="images/IMG_3825.JPG" alt="Аудитория 5" class="w-full h-56 object-cover">
                     <div class="p-6">
-                        <p class="font-semibold">Аудитория веб-разработки</p>
-                        <p class="text-sm text-slate-600 mt-1">Макбуки, большие мониторы, комфортные рабочие места</p>
+                        <p class="font-semibold">Мультимедийная аудитория</p>
+                        <p class="text-sm text-slate-600 mt-1">Большой 4K‑экран, звуковое оборудование, возможность трансляций и видеоконференций</p>
                     </div>
-                </div>
-                <div class="aud-card bg-white border border-slate-100 rounded-3xl overflow-hidden">
-                    <img src="img.jpg" alt="Аудитория 6" class="w-full h-56 object-cover">
-                    <div class="p-6">
-                        <p class="font-semibold">Лекционная аудитория</p>
-                        <p class="text-sm text-slate-600 mt-1">Проектор 4K, интерактивная доска, 120 мест</p>
-                    </div>
+            </div>
+            <div class="aud-card bg-white border border-slate-100 rounded-3xl overflow-hidden">
+                <img src="images/IMG_3783.JPG" alt="Аудитория 6" class="w-full h-56 object-cover">
+                <div class="p-6">
+                    <p class="font-semibold">Компьютерный класс №2</p>
+                    <p class="text-sm text-slate-600 mt-1">25 рабочих станций с предустановленным ПО для разработки, дизайна и офисных приложений</p>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- 4. ДОКУМЕНТЫ -->
-    <section id="s4" class="bg-white py-20 flex items-center">
-        <div class="max-w-5xl mx-auto px-6">
-            <h2 class="text-5xl font-bold text-center mb-16">Необходимые документы</h2>
-            <div class="max-w-2xl mx-auto space-y-10 text-xl">
-                <div class="flex gap-6"><span class="text-blue-600 font-bold text-3xl w-10">1.</span> Аттестат основного среднего и общего образования</div>
-                <div class="flex gap-6"><span class="text-blue-600 font-bold text-3xl w-10">2.</span> Заявление</div>
-                <div class="flex gap-6"><span class="text-blue-600 font-bold text-3xl w-10">3.</span> 6 фотокарточек 3×4</div>
-                <div class="flex gap-6"><span class="text-blue-600 font-bold text-3xl w-10">4.</span> Паспорт или свидетельство о рождении (оригинал и копия)</div>
+<!-- 4. ДОКУМЕНТЫ И КОНТАКТЫ -->
+<section id="s4" class="bg-white py-10 flex items-center">
+    <div class="max-w-5xl mx-auto px-6">
+        <h2 class="text-5xl font-bold text-center mb-16">Необходимые документы</h2>
+        <div class="max-w-2xl mx-auto space-y-10 text-xl">
+            <div class="flex gap-6"><span class="text-blue-600 font-bold text-3xl w-10">1.</span> Аттестат основного среднего и общего образования</div>
+            <div class="flex gap-6"><span class="text-blue-600 font-bold text-3xl w-10">2.</span> Заявление</div>
+            <div class="flex gap-6"><span class="text-blue-600 font-bold text-3xl w-10">3.</span> 6 фотокарточек 3×4</div>
+            <div class="flex gap-6"><span class="text-blue-600 font-bold text-3xl w-10">4.</span> Паспорт или свидетельство о рождении (оригинал и копия)</div>
+        </div>
+        <div class="mt-16 text-center text-xl text-blue-700 font-medium">
+            <p>Приём документов: ул. Абдымомунова 328, Лабораторный корпус КНУ</p>
+        </div>
+    </div>
+</section>
+
+<!-- 5. ОТДЕЛЕНИЕ ИНФОРМАЦИОННЫХ ТЕХНОЛОГИЙ -->
+<section id="s5" class="bg-white py-10">
+    <div class="max-w-6xl mx-auto px-6">
+        <h4 class="text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-16">
+            Отделение информационных технологий
+        </h4>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
+            <div class="card bg-white border border-slate-100 rounded-3xl p-8">
+                <p class="font-semibold text-xl">230701 Прикладная информатика (по отраслям)</p>
+                <p class="text-sm text-slate-600 mt-3">Квалификация: техник-программист. Разработка и внедрение прикладных IT-решений для различных сфер деятельности.</p>
             </div>
-            <div class="mt-20 text-center text-2xl text-blue-700 font-medium">
-                Запись: ул. Абдымомунова 328, Лабораторный корпус КНУ<br>Тел: 0709 09 7779
+            <div class="card bg-white border border-slate-100 rounded-3xl p-8">
+                <p class="font-semibold text-xl">230109 Программное обеспечение вычислительной техники и автоматизированных систем</p>
+                <p class="text-sm text-slate-600 mt-3">Квалификация: техник-программист. Разработка, тестирование и сопровождение программных продуктов.</p>
+            </div>
+            <div class="card bg-white border border-slate-100 rounded-3xl p-8">
+                <p class="font-semibold text-xl">220206 Автоматизированные системы обработки информации и управления</p>
+                <p class="text-sm text-slate-600 mt-3">Квалификация: техник. Создание, администрирование и защита баз данных и информационных систем.</p>
+            </div>
+            <div class="card bg-white border border-slate-100 rounded-3xl p-8">
+                <p class="font-semibold text-xl">100203 Информационная безопасность автоматизированных систем</p>
+                <p class="text-sm text-slate-600 mt-3">Квалификация: техник по защите информации. Обеспечение безопасности и защиты информационных систем.</p>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- 4. IT -->
-    <section id="s4" class="bg-white py-20">
+<!-- 6. ОТДЕЛЕНИЕ ЭКОНОМИКА И ФИНАНСЫ -->
+<section id="s6" class="bg-white py-10">
     <div class="max-w-6xl mx-auto px-6">
         <h4 class="text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-16">
-        Отдел информационных технологий
+            Отделение экономика и финансы
         </h4>
-
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-
-        <!-- 230109 -->
-        <div class="card bg-white border border-slate-100 rounded-3xl p-8">
-            <p class="font-semibold text-xl">
-            230109 Программное обеспечение вычислительной техники автоматизированных систем
-            </p>
-            <p class="text-sm text-slate-600 mt-3">
-            Квалификация: техник-программист.
-            Разработка алгоритмов, программная реализация, тестирование,
-            настройка и сопровождение программных продуктов.
-            </p>
-        </div>
-
-        <!-- 230701 -->
-        <div class="card bg-white border border-slate-100 rounded-3xl p-8">
-            <p class="font-semibold text-xl">
-            230701 Прикладная информатика (по отраслям)
-            </p>
-            <p class="text-sm text-slate-600 mt-3">
-            Квалификация: техник-программист.
-            Решение прикладных задач с использованием современных
-            информационно-коммуникационных технологий,
-            разработка и автоматизация информационных систем.
-            </p>
-        </div>
-
-        <!-- 220206 -->
-        <div class="card bg-white border border-slate-100 rounded-3xl p-8">
-            <p class="font-semibold text-xl">
-            220206 Автоматизированные системы обработки информации и управления
-            </p>
-            <p class="text-sm text-slate-600 mt-3">
-            Квалификация: техник.
-            Разработка, создание и эксплуатация баз данных,
-            обеспечение достоверности и безопасности информационных систем.
-            </p>
-        </div>
-
-        <!-- 220502 -->
-        <div class="card bg-white border border-slate-100 rounded-3xl p-8">
-            <p class="font-semibold text-xl">
-            220502 Техническое регулирование и управление качеством
-            </p>
-            <p class="text-sm text-slate-600 mt-3">
-            Квалификация: техник.
-            Управление качеством, контроль процессов,
-            внедрение систем стандартизации и непрерывное улучшение качества.
-            </p>
-        </div>
-
-        <!-- ИБ -->
-        <div class="card bg-white border border-slate-100 rounded-3xl p-8">
-            <p class="font-semibold text-xl">
-            Информационная безопасность автоматизированных систем
-            </p>
-            <p class="text-sm text-slate-600 mt-3">
-            Защита информационных систем, анализ уязвимостей,
-            обеспечение безопасности критической инфраструктуры.
-            </p>
-        </div>
-
-        <!-- WEB -->
-        <div class="card bg-white border border-slate-100 rounded-3xl p-8">
-            <p class="font-semibold text-xl">
-            Веб-разработка и современные цифровые технологии
-            </p>
-            <p class="text-sm text-slate-600 mt-3">
-            Проектирование и разработка веб-приложений,
-            создание сайтов, интерфейсов и цифровых сервисов.
-            </p>
-        </div>
-
-        <!-- Кибербезопасность -->
-        <div class="card bg-white border border-slate-100 rounded-3xl p-8">
-            <p class="font-semibold text-xl">
-            Кибербезопасность и тестирование систем
-            </p>
-            <p class="text-sm text-slate-600 mt-3">
-            Анализ защищённости систем, тестирование,
-            выявление и предотвращение киберугроз.
-            </p>
-        </div>
-
+            <div class="card bg-white border border-slate-100 rounded-3xl p-8">
+                <p class="font-semibold text-xl">080106 Финансы</p>
+                <p class="text-sm text-slate-600 mt-3">Квалификация: финансист. Финансовое планирование, анализ и управление денежными ресурсами.</p>
+            </div>
+            <div class="card bg-white border border-slate-100 rounded-3xl p-8">
+                <p class="font-semibold text-xl">080108 Банковское дело</p>
+                <p class="text-sm text-slate-600 mt-3">Квалификация: специалист банковского дела. Организация банковских операций и обслуживание клиентов.</p>
+            </div>
+            <div class="card bg-white border border-slate-100 rounded-3xl p-8">
+                <p class="font-semibold text-xl">080107 Налоги и налогообложение</p>
+                <p class="text-sm text-slate-600 mt-3">Квалификация: специалист по налогообложению. Расчет и контроль налоговых обязательств организаций и физических лиц.</p>
+            </div>
+            <div class="card bg-white border border-slate-100 rounded-3xl p-8">
+                <p class="font-semibold text-xl">080110 Экономика и бухгалтерский учет (по отраслям)</p>
+                <p class="text-sm text-slate-600 mt-3">Квалификация: бухгалтер. Ведение бухгалтерского учета, составление отчетности и экономический анализ.</p>
+            </div>
+            <div class="card bg-white border border-slate-100 rounded-3xl p-8">
+                <p class="font-semibold text-xl">080501 Менеджмент</p>
+                <p class="text-sm text-slate-600 mt-3">Квалификация: менеджер. Управление организацией, персоналом и бизнес-процессами.</p>
+            </div>
         </div>
     </div>
-    </section>
+</section>
 
-    <!-- 5. ЭКОНОМИКА И УПРАВЛЕНИЕ -->
-    <section id="s5" class="bg-white py-20">
+<!-- 7. ОТДЕЛЕНИЕ ПЕРЕВОДЧЕСКОЕ ДЕЛО -->
+<section id="s7" class="bg-white py-16 md:py-20">
     <div class="max-w-6xl mx-auto px-6">
         <h4 class="text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-16">
-        Отдел экономики и управления
+            Отделение переводческое дело
         </h4>
-
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-
-        <!-- 080108 -->
-        <div class="card bg-white border border-slate-100 rounded-3xl p-8">
-            <p class="font-semibold text-xl">
-            080108 Банковское дело
-            </p>
-            <p class="text-sm text-slate-600 mt-3">
-            Квалификация: специалист банковского дела.
-            Клиентское обслуживание, бухгалтерский учет,
-            анализ операций и работа в коммерческих банках.
-            </p>
-        </div>
-
-        <!-- 080110 -->
-        <div class="card bg-white border border-slate-100 rounded-3xl p-8">
-            <p class="font-semibold text-xl">
-            080110 Экономика и бухгалтерский учёт (по отраслям)
-            </p>
-            <p class="text-sm text-slate-600 mt-3">
-            Квалификация: бухгалтер.
-            Ведение бухгалтерского учета, анализ,
-            аудит и финансовый контроль на предприятиях различных отраслей.
-            </p>
-        </div>
-
-        <!-- 080106 -->
-        <div class="card bg-white border border-slate-100 rounded-3xl p-8">
-            <p class="font-semibold text-xl">
-            080106 Финансы (по отраслям)
-            </p>
-            <p class="text-sm text-slate-600 mt-3">
-            Квалификация: финансист.
-            Финансовое планирование, анализ,
-            управление денежными потоками и бюджетирование.
-            </p>
-        </div>
-
-        <!-- 080501 -->
-        <div class="card bg-white border border-slate-100 rounded-3xl p-8">
-            <p class="font-semibold text-xl">
-            080501 Менеджмент (по отраслям)
-            </p>
-            <p class="text-sm text-slate-600 mt-3">
-            Квалификация: менеджер.
-            Организация и управление деятельностью предприятий,
-            решение финансово-экономических задач.
-            </p>
-        </div>
-
-        <!-- 100201 -->
-        <div class="card bg-white border border-slate-100 rounded-3xl p-8">
-            <p class="font-semibold text-xl">
-            100201 Туризм
-            </p>
-            <p class="text-sm text-slate-600 mt-3">
-            Квалификация: специалист по туризму.
-            Организация туристических услуг, ведение переговоров,
-            работа с клиентами и партнёрами в сфере туризма.
-            </p>
-        </div>
-
+        <div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-1 gap-8 max-w-2xl mx-auto">
+            <div class="card bg-white border border-slate-100 rounded-3xl p-8">
+                <p class="font-semibold text-xl">050720 Переводческое дело (английский язык и китайский язык)</p>
+                <p class="text-sm text-slate-600 mt-3">Квалификация: переводчик. Осуществление письменного и устного перевода, межкультурная коммуникация.</p>
+            </div>
         </div>
     </div>
-    </section>
+</section>
 
-    <!-- 6. ГУМАНИТАРНЫЕ И СОЦИАЛЬНЫЕ -->
-    <section id="s6" class="bg-white py-20">
+<!-- 8. ОТДЕЛЕНИЕ МНОГОПРОФИЛЬНЫХ СПЕЦИАЛЬНОСТЕЙ -->
+<section id="s8" class="bg-white py-10">
     <div class="max-w-6xl mx-auto px-6">
         <h4 class="text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-16">
-        Гуманитарные и социальные направления
+            Отделение многопрофильных специальностей
         </h4>
-
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-
-        <!-- 030503 -->
-        <div class="card bg-white border border-slate-100 rounded-3xl p-8">
-            <p class="font-semibold text-xl">
-            030503 Правоведение
-            </p>
-            <p class="text-sm text-slate-600 mt-3">
-            Квалификация: юрист.
-            Реализация правовых норм, обеспечение законности и правопорядка,
-            правовое консультирование и сопровождение.
-            </p>
-        </div>
-
-        <!-- 040101 -->
-        <div class="card bg-white border border-slate-100 rounded-3xl p-8">
-            <p class="font-semibold text-xl">
-            040101 Социальная работа
-            </p>
-            <p class="text-sm text-slate-600 mt-3">
-            Квалификация: социальный работник.
-            Социальная защита и обслуживание населения,
-            работа с трудными жизненными ситуациями,
-            ведение кейс-менеджмента и профилактическая деятельность.
-            </p>
-        </div>
-
-        <!-- 050711 -->
-        <div class="card bg-white border border-slate-100 rounded-3xl p-8">
-            <p class="font-semibold text-xl">
-            050711 Социальная педагогика
-            </p>
-            <p class="text-sm text-slate-600 mt-3">
-            Квалификация: социальный педагог.
-            Работа с детьми и подростками в образовательных учреждениях,
-            организация воспитательной и профилактической деятельности.
-            </p>
-        </div>
-
-        <!-- 050720 -->
-        <div class="card bg-white border border-slate-100 rounded-3xl p-8">
-            <p class="font-semibold text-xl">
-            050720 Переводческое дело
-            </p>
-            <p class="text-sm text-slate-600 mt-3">
-            Квалификация: переводчик.
-            Межъязыковая и межкультурная коммуникация,
-            письменный и устный перевод,
-            сопровождение международных проектов.
-            </p>
-        </div>
-
-        <!-- 030505 -->
-        <div class="card bg-white border border-slate-100 rounded-3xl p-8">
-            <p class="font-semibold text-xl">
-            030505 Иностранный язык
-            </p>
-            <p class="text-sm text-slate-600 mt-3">
-            Квалификация: учитель иностранного языка (в начальных классах).
-            Преподавание иностранного языка,
-            развитие коммуникативных и педагогических навыков.
-            </p>
-        </div>
-
+            <div class="card bg-white border border-slate-100 rounded-3xl p-8">
+                <p class="font-semibold text-xl">100201 Туризм</p>
+                <p class="text-sm text-slate-600 mt-3">Квалификация: специалист по туризму. Организация туристической деятельности и обслуживание клиентов.</p>
+            </div>
+            <div class="card bg-white border border-slate-100 rounded-3xl p-8">
+                <p class="font-semibold text-xl">040101 Социальная работа</p>
+                <p class="text-sm text-slate-600 mt-3">Квалификация: специалист по социальной работе. Оказание социальной помощи и поддержка различных категорий населения.</p>
+            </div>
+            <div class="card bg-white border border-slate-100 rounded-3xl p-8">
+                <p class="font-semibold text-xl">Психология (экспериментальная)</p>
+                <p class="text-sm text-slate-600 mt-3">Квалификация: помощник психолога. Подготовка специалистов для проведения психодиагностики, участия в психологических исследованиях и оказания консультативной помощи под руководством психолога.</p>
+            </div>
         </div>
     </div>
-    </section>
+</section>
+
+<!-- 9. СРОКИ ОБУЧЕНИЯ И ЗАВЕДУЮЩИЕ (оформлено в стиле карточек) -->
+<section id="s9" class="bg-white py-16 md:py-20">
+    <div class="max-w-6xl mx-auto px-6">
+        <div class="grid md:grid-cols-2 gap-12">
+            <!-- Сроки обучения -->
+            <div class="card bg-white border border-slate-100 rounded-3xl p-8 shadow-md">
+                <h3 class="text-2xl font-bold mb-6 text-blue-800">📅 Сроки обучения</h3>
+                <div class="space-y-4 text-lg">
+                    <p><span class="font-semibold">На базе 9 класса:</span> 2 года 10 месяцев</p>
+                    <p><span class="font-semibold">На базе 11 класса:</span> 1 год 10 месяцев</p>
+                </div>
+            </div>
+
+            <!-- Заведующие отделениями -->
+            <div class="card bg-white border border-slate-100 rounded-3xl p-8 shadow-md">
+                <h3 class="text-2xl font-bold mb-6 text-blue-800">👥 Заведующие отделениями</h3>
+                <div class="space-y-4">
+                    <p><span class="font-semibold">Информационные технологии:</span> Мамбеталиев Мирбек Жуманазарович — <a href="tel:+996709097779" class="text-blue-600 hover:underline">+996 (709) 097-779</a></p>
+                    <p><span class="font-semibold">Многопрофильные специальности:</span> Токтосунова Ализа Токтосуновна — <a href="tel:+996705655401" class="text-blue-600 hover:underline">+996 (705) 655-401</a></p>
+                    <p><span class="font-semibold">Экономика и финансы:</span> Токтоматова Жумабу Нематьялевна — <a href="tel:+996703133335" class="text-blue-600 hover:underline">+996 (703) 133-335</a></p>
+                    <p><span class="font-semibold">Переводческое дело:</span> Иманалиева Мунара Женешбековна — <a href="tel:+996705450645" class="text-blue-600 hover:underline">+996 (705) 450-645</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
     <!-- 8. КАРТА -->
     <section id="s8" class="bg-white py-16 flex items-center">
